@@ -59,7 +59,7 @@ const Signin: FC = () => {
         <div className={'form__link'}>
           {isError && <h4>{err?.data}</h4>}
           <span>create account:</span>
-          <Link to={'/signup'}> Sign up </Link>
+          <Link to={'/'}> Sign up </Link>
         </div>
       </form>
     </Container>

@@ -12,7 +12,7 @@ export const todoApi = createApi({
   reducerPath: 'todoApi',
   tagTypes: ['Todos'],
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:5000',
+    baseUrl: process.env.REACT_APP_BASE_URL as string,
     prepareHeaders: (headers, { getState }) => {
       const token = (getState() as RootState).userReducer.token
       if (token) {

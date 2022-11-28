@@ -1,0 +1,70 @@
+.UiButton {
+  position: relative;
+  border-radius: 4px;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  overflow: hidden;
+  user-select: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  vertical-align: middle;
+  color: #fff;
+  background: rgba(9, 144, 255, 1);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    background: rgba(9, 144, 255, 0.80);
+  }
+
+  > span {
+    pointer-events: none;
+  }
+
+  > svg {
+    margin-right: 5px;
+    font-size: 20px;
+    fill: currentColor;
+    pointer-events: none;
+  }
+}
+
+.primary {
+  background: #0990ff;
+  &:hover {
+    background: rgba(9, 144, 255, 0.8);
+  }
+}
+
+.info {
+  background: #0288d1;
+  &:hover {
+    background: rgba(2, 136, 209, 0.8);
+  }
+}
+
+.success {
+  background: #66bb6a;
+  &:hover {
+    background: rgba(102, 187, 106, 0.8);
+  }
+}
+
+.error {
+  background: #d32f2f;
+  &:hover {
+    background: rgba(211, 47, 47, 0.8);
+  }
+}
+
+.warning {
+  background: #f57c00;
+  &:hover {
+    background: rgba(245, 124, 0, 0.8);
+  }
+}

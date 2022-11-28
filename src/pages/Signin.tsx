@@ -43,12 +43,14 @@ const Signin: FC = () => {
       <form className={'form'} onSubmit={onSubmit}>
         <UiInput
           value={value.email}
+          defaultValue={'test@gmail.com'}
           onChange={e => setValue({ ...value, email: e.target.value })}
           text={'Email'}
           type={'text'}
         />
         <UiInput
           value={value.password}
+          defaultValue={'kompl211'}
           onChange={e => setValue({ ...value, password: e.target.value })}
           text={'Password'}
           type={'password'}
